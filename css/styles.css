@@ -23,7 +23,7 @@
   --gray-1: #f5f4fa;
   --gray-2: #afb1b8;
   --black-1: #000000;
-  --animation-speed: 250ms;
+  --transition-time: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --container-padding: calc((100% - 1200px) / 2);
 }
@@ -174,7 +174,7 @@ header .container .contact-menu li .link:hover .icon {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img_Hero.svg);
-  padding: 201px var(--container-padding);
+  padding: 205px var(--container-padding);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -409,8 +409,9 @@ footer .container .footer-links .contact:hover {
   color: var(--primary-white-color);
 }
 footer .container aside p {
-  color: var(--primary-white-color);
+  font-size: 16px;
   font-weight: 700;
+  color: var(--primary-white-color);
   margin-top: -20px;
   margin-bottom: 20px;
 }
@@ -566,11 +567,11 @@ footer .container aside ul li:hover a .icon {
 }
 .modal {
   position: absolute;
-  top: 12%;
+  top: 13%;
   left: 30%;
 
   min-width: 528px;
-  min-height: 581px;
+  min-height: 580px;
 
   background: white;
 
@@ -601,11 +602,11 @@ footer .container aside ul li:hover a .icon {
   transform: rotate(360deg);
   transition: transform 500ms ease;
 }
-
+/*Formulario Modal*/
 .modal-form {
   padding: 30px;
 }
-.title {
+.title-form {
   font-weight: 700;
   font-size: 21px;
   line-height: 1.15;
@@ -789,4 +790,87 @@ footer .container aside ul li:hover a .icon {
 
 .modal-form .button-submit:active {
   background-color: #1e8ce6dc;
+}
+.title-footer {
+  display: block;
+
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.container-subscribe {
+  width: 570px;
+  height: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.form-subscribe .email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: white;
+  background-color: var(--footer-color);
+}
+
+.form-subscribe .email:hover {
+  border: 1px solid white;
+}
+
+.form-subscribe .email:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
+}
+
+.form-subscribe .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  transition: background-color var(--transition-time) var(--transition-function);
+}
+
+.form-subscribe .button:hover {
+  background-color: #188ce8;
+  /* border: 1px solid var(--white-color); */
+}
+
+.icon-footer {
+  margin-left: 10px;
 }
