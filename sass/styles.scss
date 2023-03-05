@@ -1,0 +1,23 @@
+// UTILS
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+// BASE
+@import 'base/normalize';
+@import './base/container';
+
+// COMPONENTS
+@import './components/_subtitle';
+@import './components/icons';
+@import './components/footer-form';
+
+// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/what-we';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/_footer';
